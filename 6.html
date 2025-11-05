@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>check voter eligiblty</title>
+</head>
+<body>
+<h2> voter eligiblty</h2>
+
+<form onsubmit="checkEligibility();return false;"
+    <label for="uname">name:</label>
+    <input type="text"id="uname"placeholder="enter your name" required><br><br>
+>
+    <label for="uage">age:</label>
+    <input type="number"id="uage"placeholder="enter your age" required><br><br>
+
+    <button type="submit">check</button>
+</form>
+<script>
+function checkEligibility(){
+    let name=document.getElementById("uname"),value;
+    let age=parseInt(document.getElementById("uage").value);
+
+    if(age>=18)
+{
+    alert("name: " + "\nage:"+age+"\n eligible to vote");
+}
+else{
+   alert("name: " + "\nage:"+age+"\n notegibile to vote");
+}
+}
+
+</script>
+</body>
+</html>
